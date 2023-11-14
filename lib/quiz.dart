@@ -65,7 +65,9 @@ class _QuizState extends State<Quiz> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
-          decoration: const BoxDecoration(color: Colors.blueGrey),
+          decoration: const BoxDecoration(
+            color: Color.fromARGB(255, 201, 218, 226),
+          ),
           child: screenWidget,
         ),
       ),

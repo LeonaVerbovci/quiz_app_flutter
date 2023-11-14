@@ -19,8 +19,8 @@ class AnswerButton extends StatelessWidget {
           vertical: 10,
           horizontal: 40,
         ),
-        backgroundColor: Colors.grey,
-        foregroundColor: Colors.white,
+        backgroundColor: const Color.fromARGB(255, 179, 195, 196),
+        foregroundColor: const Color.fromARGB(255, 3, 37, 65),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
         ),

@@ -9,7 +9,7 @@ class StartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color.fromARGB(255, 201, 218, 226),
         body: SafeArea(
           child: Center(
             child: Column(
@@ -21,17 +21,22 @@ class StartScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 100),
                 Text(
-                  'Learn Flutter the fun Way',
+                  'Learn Flutter the Fun Way',
                   style: GoogleFonts.lato(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                       color: const Color.fromARGB(255, 3, 37, 65)),
                 ),
                 const SizedBox(height: 100),
-                ElevatedButton.icon(
+                ElevatedButton(
                   onPressed: startQuiz,
-                  icon: const Icon(Icons.arrow_right),
-                  label: const Text('Start the Quiz'),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blueGrey,
+                  ),
+                  child: const Text(
+                    'Start the Quiz',
+                    style: TextStyle(fontSize: 18, color: Colors.white),
+                  ),
                 )
               ],
             ),
