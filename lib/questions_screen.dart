@@ -35,8 +35,8 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
 
     return SizedBox(
       width: double.infinity,
-      child: Container(
-        margin: const EdgeInsets.all(50),
+      child: Padding(
+        padding: const EdgeInsets.only(left: 30, right: 30),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
